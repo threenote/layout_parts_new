@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.q2__content__box {
+  width: 900px;
+  background-color: #eff3f4;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+.picture {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.picture2 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.content__text {
+  font-size: 18px;
+  line-height: 22px;
+}
 /* 回答はここに書いてね */
