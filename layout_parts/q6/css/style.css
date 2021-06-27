@@ -1,73 +1,79 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
-.q6__box{
+.text {
   text-align: center;
 }
 
 .text_box {
   display: inline-block;
+  /* 横幅と高さの指定が可能で、横幅の初期値が内容で決まる。 */
   background-color: #e6f2ff;
-  padding: 10px;
+  padding: 10px 0;
   width: 90px;
 }
 
 .margin_box {
   background-color: #e6f2ff;
-  padding: 10px;
+  padding: 10px 0;
   width: 90px;
   margin: 0 auto;
-  text-align: center;
 }
 
-.q6--around {
-  display: block;
+.q6_table_box {
+  display: table;
+  /* display:table-cellを指定し、親要素にdisplay:tableを指定する */
+}
+
+.table_box {
+  display: table-cell;
   text-align: center;
+  vertical-align: middle;
+  /* 行の中でテキストや画像などの縦方向の揃え位置を指定する。 */
 }
 
 .table {
   display: inline-block;
   padding: 10px;
-  background-color:#fff ;
-  margin: auto;
+  background-color: #fff;
+}
+
+.flex_box {
+  display: flex;
+  align-items: center;
+  /* コンテナ内のアイテムの交差軸方向（初期値は縦方向）のデフォルト揃え位置を指定する */
+  justify-content: center;
+  /* 各アイテムは、主軸方向で配置コンテナの中央に向けて互いに寄せて配置される。 */
 }
 
 .flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: inline-block;
   padding: 10px;
   background-color: #fff;
 }
 
-.q6__box {
+.q6_new_box {
   position: relative;
   display: block;
+  /* コンテンツをまとめている箱 */
 }
 
-.is-stable {
+.q6_box_kotei {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  box-sizing: border-box;
-  width: 100px;
-  height: 30px;
   margin: auto;
-  padding: 10px;
-  line-height: 10px;
-  background-color: #e6f2ff;
+  /* position+marginで上下左右中央になる仕組み */
 }
 
-.is-flexible {
+.q6_box_kahen {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform : translate(-50%,-50%);
   transform : translate(-50%,-50%);
+  /* 中央寄せする要素の左上を起点として上から50%（top: 50%;）・左から50%（left: 50%;）の位置に移動させ、要素の大きさの半分ずつを戻す（translate）、という動き */
   background-color: #e6f2ff;
   padding: 10px;
 }

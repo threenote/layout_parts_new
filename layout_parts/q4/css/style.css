@@ -4,10 +4,13 @@
 .q4__box {
   background-color: #eff3f4;
   margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .two_box:first-child {
   display: flex;
+  /* 親要素にdisplay:flexを指定することで親要素がフレックスコンテナ、子要素がフレックスアイテムになる。ブロックを横並びにする */
   margin: auto;
 }
 
@@ -16,11 +19,9 @@
   margin-top: 20px;
 }
 
-
 .pink {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  /* テーブルやエクセルのような表示を行うことができる。要素を簡単に横並びにできるもの。 */
   background-color: #fdc8b8;
   width: 100px;
   padding: 20px 0;
@@ -28,17 +29,14 @@
 
 .purple {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   background-color: #e0abd9;
   flex: 1;
+  /* フレックスアイテムをフレックスコンテナの領域内に収めるためにどのように伸長・収縮させるかを指定している。 */
   padding: 20px 0;
 }
 
 .blue {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   background-color: #b6d8ed;
   width: 100px;
   padding: 20px 0;
@@ -46,8 +44,6 @@
 
 .yellow {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   background-color: #e5d32e;
   flex: 1;
   padding: 20px 0;
@@ -55,8 +51,6 @@
 
 .red {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   background-color: #ec8f9a;
   flex: 1;
   padding: 20px 0;
@@ -64,8 +58,6 @@
 
 .green {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   background-color: #8fdcad;
   width: 500px;
   padding: 20px 0;

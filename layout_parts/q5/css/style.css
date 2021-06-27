@@ -1,26 +1,36 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.q5__box {
+.back {
   width: 500px;
   background-color: #ecf1f2;
   margin: 0 auto;
   position: relative;
 }
 
+.q5_box {
+  width: 100px;
+  line-height: 100px;
+  /* 高さをline-heightにすることで数字を上下中央寄せにしている。 */
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  /* フォントの太さを変更している。 */
+}
+
 .one {
   position: absolute;
   top: 40px; left: 200px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #ffefd3;
 }
 
 .two {
   position: absolute;
   top: 120px; left: 280px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #7084de;
 }
 
@@ -28,8 +38,8 @@
   position: absolute;
   top: 200px;
   left: 360px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #d0ecea;
 }
 
@@ -37,18 +47,19 @@
   position: absolute;
   top: 280px;
   left: 280px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #8b7a5e;
   z-index: 4;
+  /* 画像やイラストなどが重なっているときに順番で前にしていく。 */
 }
 
 .five {
   position: absolute;
   top: 360px;
   left: 200px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #9fd6d2;
   z-index: 5;
 }
@@ -57,8 +68,8 @@
   position: absolute;
   top: 280px;
   left: 120px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #fffee4;
   z-index: 6;
 }
@@ -67,8 +78,8 @@
   position: absolute;
   top: 200px;
   left: 40px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #deae70;
   z-index: 7;
 }
@@ -77,28 +88,28 @@
   position: absolute;
   top: 120px;
   left: 120px;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   background-color: #de70cf;
   z-index: 8;
 }
 
 .eight::after {
   position: absolute;
-  top: 120px;
-  left: 200px;
+  left: 80px;
   background-color: #ffefd3;
   height: 20px;
   width: 20px;
   z-index: 9;
+  content: "";
+  /* contentを入れないと表示されない。文字を入れなくていいのなら””で空白でよい */
 }
 
 .nine {
   position: fixed;
+  /* 画面上に常に固定することができる。 */
   top: 10px;
   left: 10px;
-  width: 100px;
-  height: 100px;
   background-color: #2b69a3;
 }
 /* 回答はここに書いてね */

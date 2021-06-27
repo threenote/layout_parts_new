@@ -1,41 +1,41 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.data,table th,table td{
-  border-collapse: collapse;
+.data th,td,data {
+  /* このタグを選択することで表を作成する */
   border: solid #dedede 1px;
-  table-layout: auto;
   padding: 10px 0;
+}
+
+.data {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  /* table-layout: fixed;を入れることで表が最初の行のセル幅によって設定される。 */
+}
+
+.data th {
+  background-color: #2244aa;
+  color:#fff;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.data tr {
   font-size: 16px;
   line-height: 22px;
 }
 
-.data tr:nth-child(2n+3) {
+.data tr:nth-child(even) {
   background-color: #ecf1f2;
+  /* 偶数行に反映される */
 }
 
-.data:first-child {
-  padding-top: 0;
+data tr th:last-child {
+  border-top: dashed #000 2px ;
+  /* 最後の行に反映させる */
 }
 
-.data:last-child {
-  padding-bottom: 0;
-}
-
-.cell:first-child{
-  background-color:#2244aa;
-  font-size: 18px;
-  line-height: 26px;
-}
-.cell :first-child {
-  background-color:#2244aa;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.tensen {
-  border-top: dashed #000 2px;
-}
 
 
 /* 回答はここに書いてね */
