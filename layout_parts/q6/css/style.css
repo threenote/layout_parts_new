@@ -5,18 +5,24 @@
   text-align: center;
 }
 
+.two_box {
+  padding: 10px 0;
+  width: 90px;
+  background-color: #e6f2ff;
+}
+
 .text_box {
   display: inline-block;
   /* 横幅と高さの指定が可能で、横幅の初期値が内容で決まる。 */
-  background-color: #e6f2ff;
-  padding: 10px 0;
-  width: 90px;
+  /* background-color: #e6f2ff; */
+  /* padding: 10px 0; */
+  /* width: 90px; */
 }
 
 .margin_box {
-  background-color: #e6f2ff;
-  padding: 10px 0;
-  width: 90px;
+  /* background-color: #e6f2ff; */
+  /* padding: 10px 0; */
+  /* width: 90px; */
   margin: 0 auto;
 }
 
@@ -32,6 +38,11 @@
   /* 行の中でテキストや画像などの縦方向の揃え位置を指定する。 */
 }
 
+.two_content {
+  padding: 10px;
+  background-color: #fff;
+}
+
 .table {
   display: inline-block;
   padding: 10px;
@@ -44,11 +55,6 @@
   /* コンテナ内のアイテムの交差軸方向（初期値は縦方向）のデフォルト揃え位置を指定する */
   justify-content: center;
   /* 各アイテムは、主軸方向で配置コンテナの中央に向けて互いに寄せて配置される。 */
-}
-
-.flex {
-  padding: 10px;
-  background-color: #fff;
 }
 
 .q6_new_box {

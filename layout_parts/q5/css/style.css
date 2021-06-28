@@ -3,9 +3,10 @@
 /* 回答はここに書いてね */
 .back {
   width: 500px;
+  height: 500px;
   background-color: #ecf1f2;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
 }
 
 .q5_box {
@@ -97,6 +98,7 @@
 .eight::after {
   position: absolute;
   left: 80px;
+  top: 0;
   background-color: #ffefd3;
   height: 20px;
   width: 20px;

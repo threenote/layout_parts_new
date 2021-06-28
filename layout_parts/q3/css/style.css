@@ -31,11 +31,9 @@
   /* 偶数行に反映される */
 }
 
-data tr th:last-child {
-  border-top: dashed #000 2px ;
+.data tbody tr:last-child {
+  border-top: 2px dashed #000;
   /* 最後の行に反映させる */
 }
-
-
 
 /* 回答はここに書いてね */
