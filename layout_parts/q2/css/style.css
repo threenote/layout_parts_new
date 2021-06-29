@@ -15,17 +15,13 @@
 }
 
 .picture {
-  margin-right: 20px;
+  margin: 0 20px 10px 0;
   float: left;
 }
 
 .picture2 {
-  margin-left: 20px;
+  margin: 0 0 10px 20px;
   float: right;
-}
-
-.common {
-  margin-bottom: 10px;
 }
 
 .content__text {
