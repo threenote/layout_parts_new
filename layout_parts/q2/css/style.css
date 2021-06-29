@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+}
+
 .q2__content__box {
   width: 900px;
   background-color: #eff3f4;
@@ -10,19 +16,16 @@
 
 .picture {
   margin-right: 20px;
-  /* margin-bottom: 10px; */
   float: left;
 }
 
 .picture2 {
   margin-left: 20px;
-  /* margin-bottom: 10px; */
   float: right;
 }
 
 .common {
   margin-bottom: 10px;
-  /* クラスpicture1.2の共通クラス */
 }
 
 .content__text {
