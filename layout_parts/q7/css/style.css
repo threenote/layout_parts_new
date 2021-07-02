@@ -7,17 +7,19 @@
   clear: both;
 }
 
+.width_box {
+  width: 225px;
+  font-size: 16px;
+}
+
 .two_box:first-child {
   margin-left: 0;
 }
 
 .two_box {
-  width: 225px;
   float: left;
-  font-size: 16px;
   margin-left: 50px;
   box-sizing: border-box;
-  /* paddingとborderを幅と高さを含める */
 }
 
 .content_box {
@@ -30,7 +32,6 @@
 
 .table_box {
   display: table-cell;
-  width: 225px;
   padding-left: 50px;
   vertical-align: middle;
 }
@@ -41,10 +42,30 @@
 
 .inline_box {
   display: inline-block;
-  width: 225px;
   margin-left: 50px;
   box-sizing: border-box;
-  font-size: 16px;
   vertical-align: middle;
 }
-/* 回答はここに書いてね */
+
+.flex_box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.box_flex {
+  box-sizing: border-box;
+}
+
+.margin_box:first-child {
+  margin-left: 0;
+  width: 300px;
+}
+
+.margin_box {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 50px;
+}
+
+/* ここに書いてね */
