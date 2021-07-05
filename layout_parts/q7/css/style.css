@@ -57,15 +57,17 @@
   box-sizing: border-box;
 }
 
-.margin_box:first-child {
-  margin-left: 0;
+.margin_box {
+  display: inline-block;
   width: 300px;
 }
 
-.margin_box {
+.margin___box {
   display: inline-block;
+  width: 100%;
+  padding-left: 350px;
   box-sizing: border-box;
-  margin-left: 50px;
+  margin-left: -300px;
 }
 
 /* ここに書いてね */
